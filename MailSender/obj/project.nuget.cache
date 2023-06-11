@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "y2ZQHBFgkov6pjpMkSOuebtlUOF6OOC9F1HwzCVZQaec69mkb4IrAo66imyO0EQ2VhRV5TlcInJ4n2TRprOIeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\igorb\\OneDrive\\Документы\\MailSender-master\\MailSender\\MailSender.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\igorb\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\mailkit\\4.0.0\\mailkit.4.0.0.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\materialdesigncolors\\2.1.4\\materialdesigncolors.2.1.4.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\materialdesignthemes\\4.9.0\\materialdesignthemes.4.9.0.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.39\\microsoft.xaml.behaviors.wpf.1.1.39.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\mimekit\\4.0.0\\mimekit.4.0.0.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.117\\stub.system.data.sqlite.core.netstandard.1.0.117.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\system.data.sqlite.core\\1.0.117\\system.data.sqlite.core.1.0.117.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.2\\system.security.cryptography.pkcs.6.0.2.nupkg.sha512",
+    "C:\\Users\\igorb\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
