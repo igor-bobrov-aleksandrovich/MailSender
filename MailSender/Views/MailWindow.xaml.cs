@@ -22,6 +22,9 @@ namespace MailSender.Views
         public MailWindow()
         {
             InitializeComponent();
+            Settings sett = Settings.GetInstance();
+            l_Email.Content = "email: " + sett.email;
+            l_Name.Content = "фамилия: " + sett.lastName;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

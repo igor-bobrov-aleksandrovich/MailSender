@@ -35,7 +35,7 @@
                  materialDesign:HintAssist.Hint="Кому"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
                  Text="{Binding StrTo, UpdateSourceTrigger=PropertyChanged}" Width="729"/>
-        <Button Grid.Column="1" Content="Отправить" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center"/>
+        <Button Grid.Column="1" Content="Отправить" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Click="Button_Click"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" 
                   materialDesign:HintAssist.Hint="От кого"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2" Width="729"

@@ -46,12 +46,17 @@ namespace MailSender
         {
             return "Data Source=.\\User.db; Version=3";
         }
-        public bool UserExist(string login, string password)
+        public bool UserLogin(string login, string password)
         {
             Dictionary<string, User> users = SelectUsers();
             if(login != null && login.Length>0)
                 return users.ContainsKey(login) && users[login].Password == password;
             return false;
+        }
+        public bool UserExist(string login)
+        {
+            Dictionary<string, User> users = SelectUsers();
+            return users.ContainsKey(login) && login!=null;
         }
     }
 }

@@ -23,5 +23,11 @@ namespace MailSender.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            EmailService service = new EmailService();
+            service.SendEmailAsync("igor.bobrov.aleksandrovich@gmail.com", "gmailll", ")))");
+        }
     }
 }

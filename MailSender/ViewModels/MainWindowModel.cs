@@ -159,10 +159,17 @@ namespace MailSender.ViewModels
                     (logIn = new BaseCommands(obj =>
                     {
                         DBmaneger maneger = DBmaneger.GetInstance();
-                        //if (maneger.UserExist(StrLogIn, StrPassword))
+                        if (maneger.UserLogin(StrLogIn, StrPassword))
                         {
+                            User user = maneger.SelectUsers()[strLogin];
+                            Settings sett = Settings.GetInstance();
+                            sett.SetSettings(user);
                             WinBuilder.ShowMailWindow();
                             CloseWindow();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Пароль или логин не верны");
                         }
                     }));
             }
@@ -180,7 +187,15 @@ namespace MailSender.ViewModels
                         if(strEmail != "" && strFirst!="" && StrLast!="" && strMiddle!="" && strPassword != "" && strPassword == strRepPassword)
                         {
                             User newUser = new User(strEmail, strFirst, StrLast, strMiddle, age, strPassword);
-                            maneger.InsertUser(newUser);
+                            if(!maneger.UserExist(newUser.Email))
+                            {
+                                maneger.InsertUser(newUser);
+                                MessageBox.Show("Полбзователь создан!");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Полбзователь уже существвует!");
+                            }
                         }
                     }));
             }
@@ -189,36 +204,4 @@ namespace MailSender.ViewModels
         public void CloseWindow() => EventCloseWindow?.Invoke(this, EventArgs.Empty);
     }
 }
-/*
- using MimeKit;
-using MailKit.Net.Smtp;
-using System.Threading.Tasks;
 
-
-EmailService service = new EmailService();
-await service.SendEmailAsync("igor.bobrov.aleksandrovich@gmail.com", "gmailll", ")))");
-internal class EmailService
-{
-    public async Task SendEmailAsync(string email, string subject, string message)
-    {
-        using var emailMessage = new MimeMessage();
-
-        emailMessage.From.Add(new MailboxAddress("Администрация сайта", "igor.bobrov.aleksandrovichgmail@internet.ru"));
-        emailMessage.To.Add(new MailboxAddress("", email));
-        emailMessage.Subject = subject;
-        emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Html)
-        {
-            Text = message
-        };
-
-        using (var client = new SmtpClient())
-        {
-            await client.ConnectAsync("smtp.mail.ru", 25, false);
-            await client.AuthenticateAsync("igor.bobrov.aleksandrovichgmail@internet.ru", "B6nQAwQxpXPYzGBe3x2W");
-            await client.SendAsync(emailMessage);
-
-            await client.DisconnectAsync(true);
-        }
-    }
-}
- */

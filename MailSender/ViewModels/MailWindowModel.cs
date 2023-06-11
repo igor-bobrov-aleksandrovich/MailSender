@@ -45,7 +45,6 @@ namespace MailSender.ViewModels
                         DBmaneger maneger = DBmaneger.GetInstance();
                         {
                             WinBuilder.ShowMailSenderWindow();
-                            CloseWindow();
                         }
                     }));
             }

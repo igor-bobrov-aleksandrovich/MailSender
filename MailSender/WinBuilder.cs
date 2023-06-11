@@ -32,7 +32,7 @@ namespace MailSender
             var viewModel = new MailSenderModel();
             window.DataContext = viewModel;
             viewModel.EventCloseWindow += (sender, args) => { window.Close(); };
-            window.Show();
+            window.ShowDialog();
         }
     }
 }
