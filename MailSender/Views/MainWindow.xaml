@@ -8,6 +8,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="800" Background="White">
     <Grid x:Name="MainGrid">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/1659369317_1-pibig-info-p-krasivii-fon-minimalizm-krasivo-1.jpg"/>
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="350*"/>
             <RowDefinition Height="100"/>

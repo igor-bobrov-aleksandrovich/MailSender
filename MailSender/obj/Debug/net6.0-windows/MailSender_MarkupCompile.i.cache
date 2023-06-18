@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\igorb\OneDrive\Документы\MailSender-master\MailSender\obj\Debug\net6.0-windows\
+C:\Users\igorb\OneDrive\Документы\Project\MailSender\MailSender\obj\Debug\net6.0-windows\
 MailSender
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\igorb\OneDrive\Документы\MailSender-master\MailSender\App.xaml
-5845886732
+C:\Users\igorb\OneDrive\Документы\Project\MailSender\MailSender\App.xaml
+6-1501756264
 
-18-2018955727
+192053474007
 202-416949358
-UserControls\LoginControl.xaml;UserControls\RegControl.xaml;Views\MailSenderWindow.xaml;Views\MailWindow.xaml;Views\MainWindow.xaml;
+UserControls\LoginControl.xaml;UserControls\RegControl.xaml;Views\MailSenderWindow.xaml;Views\MailWindow.xaml;Views\MainWindow.xaml;Views\SettingsWindow.xaml;
 
 True
 

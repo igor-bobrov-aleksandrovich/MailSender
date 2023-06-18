@@ -9,6 +9,9 @@
         mc:Ignorable="d"
         Title="MailSenderWindow" Height="600" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Image/1671600562_kalix-club-p-oboi-minimalizm-belie-pinterest-2.jpg"/>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="25"/>
             <ColumnDefinition Width="745*"/>
@@ -29,22 +32,27 @@
         </Grid.RowDefinitions>
         <TextBox Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="1"
                  materialDesign:HintAssist.Hint="Тема"
+                 Background="#FFCEBBBB"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
                  Text="{Binding StrTheme, UpdateSourceTrigger=PropertyChanged}" Width="729"/>
         <TextBox Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="5"
                  materialDesign:HintAssist.Hint="Кому"
+                 Background="#FFCEBBBB"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
                  Text="{Binding StrTo, UpdateSourceTrigger=PropertyChanged}" Width="729"/>
-        <Button Grid.Column="1" Content="Отправить" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Click="Button_Click"/>
+        <Button Grid.Column="1" Content="Отправить" HorizontalAlignment="Center" Grid.Row="9" VerticalAlignment="Center" Click="Button_Click" Background="#FFCEBBBB"/>
         <ComboBox Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" 
                   materialDesign:HintAssist.Hint="От кого"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2" Width="729"
-                  Text="{Binding StrFrom, UpdateSourceTrigger=PropertyChanged}"/>
+                  Text="{Binding StrFrom, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <RichTextBox Grid.Column="1" Grid.Row="7" Grid.ColumnSpan="2" materialDesign:HintAssist.Hint="Письмо"
-                 materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2">
+                 materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2" AutoWordSelection="False">
+            <RichTextBox.Background>
+                <ImageBrush/>
+            </RichTextBox.Background>
             <FlowDocument>
                 <Paragraph>
-                    <Run Text="{Binding StrMessage, UpdateSourceTrigger=PropertyChanged}"/>
+                    <Run Background="#FFCEBBBB" Text="{Binding StrMessage, UpdateSourceTrigger=PropertyChanged}"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>

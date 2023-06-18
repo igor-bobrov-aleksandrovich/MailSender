@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y2ZQHBFgkov6pjpMkSOuebtlUOF6OOC9F1HwzCVZQaec69mkb4IrAo66imyO0EQ2VhRV5TlcInJ4n2TRprOIeA==",
+  "dgSpecHash": "UJLgOe2zaH+HkuQrf+74xdUodGPT47PDdS1eTb4xPrKWfXUKeAFweq4oveMkaITMaR+joTtbnsXKdTMER90DDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\igorb\\OneDrive\\Документы\\MailSender-master\\MailSender\\MailSender.csproj",
+  "projectFilePath": "C:\\Users\\igorb\\OneDrive\\Документы\\Project\\MailSender\\MailSender\\MailSender.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\igorb\\.nuget\\packages\\bouncycastle.cryptography\\2.1.1\\bouncycastle.cryptography.2.1.1.nupkg.sha512",
     "C:\\Users\\igorb\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",

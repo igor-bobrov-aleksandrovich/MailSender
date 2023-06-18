@@ -22,10 +22,10 @@
         <TextBox Grid.Row="1" Grid.Column="1" 
                  materialDesign:HintAssist.Hint="Логин"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrLogIn, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrLogIn, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="3" Grid.Column="1" Cursor="" 
                  materialDesign:HintAssist.Hint="Пароль"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrPassword, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrPassword, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
     </Grid>
 </UserControl>

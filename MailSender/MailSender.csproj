@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\9a03002ae95ae21de966e49dfb741bad.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="MailKit" Version="4.0.0" />
     <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
@@ -19,17 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Views\9a03002ae95ae21de966e49dfb741bad.jpeg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="User.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Image\" />
   </ItemGroup>
 
 </Project>

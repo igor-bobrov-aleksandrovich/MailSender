@@ -35,25 +35,25 @@
         <TextBox Grid.Row="1" Grid.Column="1" 
                  materialDesign:HintAssist.Hint="Email"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrEmail, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrEmail, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="3" Grid.Column="1" materialDesign:HintAssist.Hint="Имя"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrFirst, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrFirst, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="5" Grid.Column="1" materialDesign:HintAssist.Hint="Фамилия"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrLast, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrLast, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="7" Grid.Column="1" materialDesign:HintAssist.Hint="Отчество"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrMiddle, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrMiddle, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="9" Grid.Column="1"  Grid.ColumnSpan="2" materialDesign:HintAssist.Hint="Пароль"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrPassword, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrPassword, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <TextBox Grid.Row="11" Grid.Column="1"  Grid.ColumnSpan="2" materialDesign:HintAssist.Hint="Пароль"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrRepPassword, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrRepPassword, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <ComboBox x:Name="cb_MailType" Grid.Row="1" Grid.Column="2" VerticalAlignment="Bottom"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2"
-                 Text="{Binding StrDot, UpdateSourceTrigger=PropertyChanged}"/>
+                 Text="{Binding StrDot, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB"/>
         <Grid Grid.Row="3" Grid.Column="2" Grid.RowSpan="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="3*"/>
@@ -61,7 +61,7 @@
             </Grid.ColumnDefinitions>
             <DatePicker x:Name="DatePick" Grid.Column="1" VerticalAlignment="Top" SelectedDateFormat="Short" CalendarOpened="DatePicker_CalendarOpened"
                  materialDesign:TextFieldAssist.UnderlineBrush="#FF8D00D2" 
-                 SelectedDate="{Binding Bd, UpdateSourceTrigger=PropertyChanged}">
+                 SelectedDate="{Binding Bd, UpdateSourceTrigger=PropertyChanged}" Background="#FFCEBBBB">
                 
             </DatePicker>
 
